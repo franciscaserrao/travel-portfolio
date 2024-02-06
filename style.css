@@ -1,5 +1,9 @@
+body {
+  background-color: #cacad0;
+}
+
 .container {
-  max-width: 1400px;
+  max-width: 1350px;
   min-width: 300px;
   font-family: Poppins, sans-serif;
   margin: 0 auto;
@@ -78,6 +82,45 @@ header a {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.why-nz {
+  background-color: white;
+  color: #06304d;
+}
+
+.why-nz h3 {
+  color: #bdbcc7;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.why-nz h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.why-nz p {
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 65px;
+  padding: 100px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 130px 0;
@@ -100,5 +143,25 @@ header a {
 
   .box {
     padding: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 70px 100px;
+    grid-gap: 50px;
+  }
+
+  .why-nz h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+    padding: 50px 50px;
+    grid-gap: 50px;
   }
 }
