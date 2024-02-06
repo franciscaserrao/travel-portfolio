@@ -121,6 +121,115 @@ header a {
   padding: 100px;
 }
 
+.cards {
+  padding: 100px;
+  background-color: #dbdbe2;
+}
+
+.cards h3 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cards h2 {
+  color: #06304d;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.itineraries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 40px auto;
+}
+
+.highlights {
+  background-color: white;
+  color: #06304d;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+h4 {
+  color: #06304d;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+h6 {
+  color: #939397;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.info {
+  margin: 30px;
+}
+
+.distance p {
+  margin: 0;
+  color: #939397;
+}
+
+.visit ul,
+li {
+  margin: 0;
+  color: #939397;
+}
+
+.proximity p {
+  margin: 0;
+  color: #939397;
+}
+
+.info a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #06304d;
+  border-radius: 5px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 130px 0;
@@ -157,11 +266,31 @@ header a {
   .why-nz h2 {
     font-size: 32px;
   }
+
+  .itineraries {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px auto;
+  }
+
+  .cards h2 {
+    font-size: 32px;
+  }
+
+  .cards {
+    padding: 50px;
+  }
 }
 
 @media (max-width: 650px) {
   .grid {
     padding: 50px 50px;
     grid-gap: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards h2 {
+    font-size: 24px;
   }
 }
