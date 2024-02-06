@@ -230,6 +230,42 @@ li {
   border-radius: 5px;
 }
 
+.videos {
+  background-color: white;
+  padding: 100px;
+}
+
+.videos h3 {
+  color: #bdbcc7;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.videos h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #06304d;
+}
+
+.youtube {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.frame {
+  margin-top: 50px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 130px 0;
@@ -267,6 +303,14 @@ li {
     font-size: 32px;
   }
 
+  .videos h2 {
+    font-size: 32px;
+  }
+
+  .videos {
+    padding: 50px;
+  }
+
   .itineraries {
     display: grid;
     grid-template-columns: 1fr;
@@ -292,5 +336,17 @@ li {
 @media (max-width: 400px) {
   .cards h2 {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .youtube {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .frame {
+    margin-top: 20px;
   }
 }
